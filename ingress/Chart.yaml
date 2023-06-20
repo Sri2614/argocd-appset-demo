@@ -1,0 +1,10 @@
+apiVersion: v2
+appVersion: '1.0.0'
+description: A Helm Chart for CS Internal Implementation
+version: 1.0.0
+dependencies:
+- name: ingress-nginx
+  version: "4.2.0"
+  repository: "https://kubernetes.github.io/ingress-nginx"
+  alias: ingress-nginx
+  condition: ingress-nginx.enabled
